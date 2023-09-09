@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facts",
+  "info": {
+    "singularName": "fact",
+    "pluralName": "facts",
+    "displayName": "facts"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "count": {
+      "type": "biginteger",
+      "required": true
+    },
+    "shortText": {
+      "type": "string"
+    }
+  }
+}

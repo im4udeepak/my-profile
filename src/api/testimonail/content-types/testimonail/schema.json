@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonails",
+  "info": {
+    "singularName": "testimonail",
+    "pluralName": "testimonails",
+    "displayName": "testimonails",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comments": {
+      "type": "string",
+      "required": true
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::owner.owner",
+      "inversedBy": "testimonials"
+    }
+  }
+}

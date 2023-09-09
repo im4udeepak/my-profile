@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "informations",
+  "info": {
+    "singularName": "information",
+    "pluralName": "informations",
+    "displayName": "information"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "shortText": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNo": {
+      "type": "biginteger",
+      "required": true
+    },
+    "emailId": {
+      "type": "email",
+      "required": true
+    },
+    "JobTitle": {
+      "type": "string",
+      "required": true
+    },
+    "longText": {
+      "type": "text"
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "degree": {
+      "type": "enumeration",
+      "enum": [
+        "High School",
+        "Secondary School or equivalent",
+        "Graduate",
+        "Graduate Diploma",
+        "Master",
+        "PhD"
+      ],
+      "required": true
+    },
+    "availablity": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
